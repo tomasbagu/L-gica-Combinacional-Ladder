@@ -1,1 +1,126 @@
-# L-gica-Combinacional-Ladder
+# 📘 Industrial Automation Assignment – Tank Level Monitoring
+
+## 1. Introducción  
+Este proyecto aborda el diseño e implementación de un sistema de **automatización industrial** para el **monitoreo de niveles de un tanque de líquido químico**.  
+El sistema utiliza **tres sensores de nivel** y lógica combinacional para identificar el estado del tanque, representándolo en una **HMI diseñada en CODESYS** y validándolo posteriormente con **OPENPLC y hardware real**.  
+
+**Objetivo general:**  
+- Desarrollar una solución de monitoreo que detecte el nivel del líquido en un tanque, mostrando estados correctos y errores en una HMI.  
+
+**Objetivos específicos:**  
+- Diseñar la lógica combinacional en ladder diagram.  
+- Implementar y simular la solución en CODESYS.  
+- Validar el diseño mediante OPENPLC y un prototipo con sensores.  
+- Documentar el proceso en un Wiki y realizar una demostración en video.  
+
+---
+
+## 2. Marco Teórico  
+
+### 2.1. HMI (Human-Machine Interface)  
+Una HMI es la interfaz gráfica mediante la cual los operadores interactúan con un proceso industrial. En este proyecto, se representa gráficamente un tanque y sus niveles de llenado.  
+
+### 2.2. CODESYS  
+CODESYS es un software de programación de PLCs que soporta IEC 61131-3. Permite diseñar lógicas de control (ladder, FBD, ST) y crear HMIs integradas.  
+
+### 2.3. OPENPLC  
+OPENPLC es una plataforma open source que permite correr programas de PLC en hardware económico (ej. Raspberry Pi, Arduino) o simuladores, validando soluciones de automatización de bajo costo.  
+
+### 2.4. Sensores de Nivel  
+Se emplean tres sensores digitales:  
+- **Sensor bajo (SB)** → detecta nivel mínimo.  
+- **Sensor medio (SM)** → detecta nivel intermedio.  
+- **Sensor alto (SA)** → detecta nivel máximo.  
+
+### 2.5. Lógica combinacional  
+La determinación del estado del tanque se basa en la siguiente **tabla de verdad**:  
+
+| SB | SM | SA | Estado del tanque |
+|----|----|----|-------------------|
+| 0  | 0  | 0  | Vacío             |
+| 1  | 0  | 0  | Bajo              |
+| 1  | 1  | 0  | Normal            |
+| 1  | 1  | 1  | Alto              |
+| Otro caso | Otro caso | Otro caso | Error |
+
+---
+
+## 3. Diseño de la Solución  
+
+### 3.1. Lógica en Ladder Diagram  
+El sistema se implementa en **ladder diagram**.  
+- Cada sensor es una entrada digital (I0.0, I0.1, I0.2).  
+- Cada estado del tanque es una salida (Q0.0: vacío, Q0.1: bajo, Q0.2: normal, Q0.3: alto, Q0.4: error).  
+
+*(Aquí se insertan capturas del ladder en CODESYS con las condiciones lógicas programadas)*  
+
+### 3.2. HMI en CODESYS  
+- Representación gráfica de un tanque.  
+- Tres indicadores de nivel (vacío, bajo, normal, alto).  
+- Indicador adicional para error.  
+
+*(Aquí se insertan capturas del HMI con los cuadros de colores que cambian según el estado del tanque)*  
+
+### 3.3. Hardware propuesto  
+- PLC (o simulador en OPENPLC).  
+- 3 sensores de nivel (pueden ser flotadores, capacitivos o pulsadores para prototipo).  
+- Salidas visualizadas en LEDs o indicadores virtuales.  
+
+*(Aquí se incluye un diagrama eléctrico con los tres sensores como entradas y las salidas como LEDs/indicadores)*  
+
+---
+
+## 4. Implementación  
+
+### 4.1. Simulación en CODESYS  
+- Configuración de las entradas digitales como sensores.  
+- Asignación de variables a los objetos gráficos en la HMI.  
+- Ejecución de la simulación mostrando los distintos estados del tanque.  
+
+### 4.2. Validación con OPENPLC y prototipo real  
+- Exportación del programa a formato OPENPLC.  
+- Carga en un controlador (ejemplo: Raspberry Pi).  
+- Conexión de sensores físicos y LEDs de salida.  
+- Pruebas de funcionamiento con activación manual de los sensores.  
+
+---
+
+## 5. Resultados y Pruebas  
+
+- **Prueba 1:** Ningún sensor activado → tanque vacío.  
+- **Prueba 2:** Solo SB activado → nivel bajo.  
+- **Prueba 3:** SB + SM activados → nivel normal.  
+- **Prueba 4:** SB + SM + SA activados → nivel alto.  
+- **Prueba 5:** Combinación inválida (ej: SM sin SB) → error.  
+
+*(Aquí se documentan capturas de pantalla de la simulación en CODESYS y fotos del prototipo con OPENPLC)*  
+
+---
+
+## 6. Video de Demostración  
+
+🎥 [Enlace al video en YouTube/Teams]  
+
+Contenido del video:  
+1. Explicación breve del sistema.  
+2. Simulación en CODESYS (HMI + Ladder).  
+3. Validación con OPENPLC y prototipo real.  
+4. Conclusiones.  
+
+---
+
+## 7. Conclusiones  
+
+- Se diseñó una lógica combinacional que permite monitorear de manera confiable los niveles del tanque.  
+- La implementación en CODESYS facilita la visualización del proceso mediante un HMI interactivo.  
+- La validación con OPENPLC demuestra la factibilidad del sistema con hardware real.  
+- El proyecto puede ampliarse integrando alarmas, comunicación SCADA o control automático de bombas.  
+
+---
+
+## 8. Referencias  
+
+- IEC 61131-3 Standard – Programmable Controllers.  
+- CODESYS Documentation.  
+- OPENPLC Project – [https://www.openplcproject.com/](https://www.openplcproject.com/)  
+- Libros y recursos de automatización industrial.  
