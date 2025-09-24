@@ -18,14 +18,12 @@ El sistema utiliza **tres sensores de nivel** y lógica combinacional para ident
 ## 2. Marco Teórico  
 
 ### 2.1. HMI (Human-Machine Interface)  
-Una HMI es la interfaz gráfica mediante la cual los operadores interactúan con un proceso industrial. En este proyecto, se representa gráficamente un tanque y sus niveles de llenado.  
+Una HMI es la pantalla o panel gráfico que conecta a las personas con una máquina o proceso industrial. Gracias a ella, el operador puede ver lo que está ocurriendo en el sistema y también interactuar con él. En pocas palabras, la HMI traduce la información técnica de un proceso en gráficos fáciles de entender y manipular. En este proyecto, se representa gráficamente un tanque y sus niveles de llenado.  
 
 ### 2.2. CODESYS  
-CODESYS es un software de programación de PLCs que soporta IEC 61131-3. Permite diseñar lógicas de control (ladder, FBD, ST) y crear HMIs integradas.  
-
+CODESYS es un software ampliamente usado en la industria para programar y simular controladores lógicos programables (PLC). Su importancia radica en que permite diseñar la lógica que controla las máquinas, pero también ofrece la posibilidad de crear interfaces gráficas (HMIs) dentro del mismo entorno. De esta forma, se puede construir y probar todo el sistema de automatización en un solo lugar, lo cual lo convierte en una herramienta flexible para cualquier persona que la use.
 ### 2.3. OPENPLC  
-OPENPLC es una plataforma open source que permite correr programas de PLC en hardware económico (ej. Raspberry Pi, Arduino) o simuladores, validando soluciones de automatización de bajo costo.  
-
+OPENPLC es una plataforma de automatización que funciona como un controlador lógico programable (PLC), pero en formato de software. En cuanto a su funcionamiento, OPENPLC recibe entradas y, a partir de la lógica programada, genera salidas. Puede correr en un computador, en modo simulador, o en hardware sencillo como Arduino, ESP32, entre otros, permitiendo conectar entradas y salidas reales. De esta forma, se convierte en una herramienta práctica para probar, validar y ejecutar sistemas de automatización de manera flexible y económica.
 ### 2.4. Sensores de Nivel  
 Se emplean tres sensores digitales:  
 - **Sensor bajo (S1)** → detecta nivel mínimo.  
