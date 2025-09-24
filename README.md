@@ -94,7 +94,17 @@ El sistema se implementa en **ladder diagram**.
 - **Prueba 5:** Combinación inválida (ej: SM sin SB) → error.  
 
 *(Aquí se documentan capturas de pantalla de la simulación en CODESYS y fotos del prototipo con OPENPLC)*  
-
+### 5.1 Resultados en CODESYS
+- Vacio:
+  <img width="1202" height="671" alt="image" src="https://github.com/user-attachments/assets/6d04f2f5-4414-4f3e-91dd-0ea5a74563d1" />
+- Nivel de Agua bajo:
+  <img width="1192" height="669" alt="image" src="https://github.com/user-attachments/assets/de6b1d8a-0e84-4de0-b349-129b427d5fa3" />
+- Nivel de Agua normal:
+  <img width="1182" height="664" alt="image" src="https://github.com/user-attachments/assets/ec1c1a1f-454d-4b56-a233-795b556e845b" />
+- Nivel de Agua alto:
+  <img width="1194" height="670" alt="image" src="https://github.com/user-attachments/assets/6f370444-060e-4be7-908c-df2692b5f95f" />
+- Error:
+  <img width="1191" height="656" alt="image" src="https://github.com/user-attachments/assets/1aaeb85b-2a37-4d8e-b024-b227c96ece93" />
 ---
 
 ## 6. Video de Demostración  
