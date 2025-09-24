@@ -1,4 +1,4 @@
-# 📘 Industrial Automation Assignment – Tank Level Monitoring
+# Logica Combinacional de Ladder – Monitoreo de un tanque de líquidos
 
 ## 1. Introducción  
 Este proyecto aborda el diseño e implementación de un sistema de **automatización industrial** para el **monitoreo de niveles de un tanque de líquido químico**.  
