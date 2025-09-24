@@ -49,8 +49,8 @@ La determinación del estado del tanque se basa en la siguiente **tabla de verda
 
 ### 3.1. Lógica en Ladder Diagram  
 El sistema se implementa en **ladder diagram**.  
-- Cada sensor es una entrada digital (I0.0, I0.1, I0.2).  
-- Cada estado del tanque es una salida (Q0.0: vacío, Q0.1: bajo, Q0.2: normal, Q0.3: alto, Q0.4: error).  
+- Cada sensor es una entrada digital (S1, S2, S3).  
+- Cada estado del tanque es una salida (EMP: vacío, LO: bajo, NOR: normal, HI: alto, ERR: error).  
 
 <img width="1228" height="757" alt="image" src="https://github.com/user-attachments/assets/aee9893e-ee19-4d7d-8dd6-476334877e14" />
 
@@ -58,9 +58,10 @@ El sistema se implementa en **ladder diagram**.
 ### 3.2. HMI en CODESYS  
 - Representación gráfica de un tanque.  
 - Tres indicadores de nivel (vacío, bajo, normal, alto).  
-- Indicador adicional para error.  
+- Indicador adicional para error.
+  
+<img width="1158" height="659" alt="image" src="https://github.com/user-attachments/assets/b2400886-da24-4855-bb76-b93e0bf9e4db" />
 
-*(Aquí se insertan capturas del HMI con los cuadros de colores que cambian según el estado del tanque)*  
 
 ### 3.3. Hardware propuesto  
 - PLC (o simulador en OPENPLC).  
