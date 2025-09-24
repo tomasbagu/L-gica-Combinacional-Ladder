@@ -81,18 +81,18 @@ El sistema se implementa en **ladder diagram**.
 
 ### 4.2. Validación con OPENPLC y prototipo real  
 - Exportación del programa a formato OPENPLC.  
-- Carga en un controlador (ejemplo: Raspberry Pi).  
+- Carga en un controlador (En este caso un ESP32).  
 - Conexión de sensores físicos y LEDs de salida.  
-- Pruebas de funcionamiento con activación manual de los sensores.  
+- Pruebas de funcionamiento con activación de los sensores.  
 
 ---
 
 ## 5. Resultados y Pruebas  
 
 - **Prueba 1:** Ningún sensor activado → tanque vacío.  
-- **Prueba 2:** Solo SB activado → nivel bajo.  
-- **Prueba 3:** SB + SM activados → nivel normal.  
-- **Prueba 4:** SB + SM + SA activados → nivel alto.  
+- **Prueba 2:** Solo S1 activado → nivel bajo.  
+- **Prueba 3:** S1 + S2 activados → nivel normal.  
+- **Prueba 4:** S1 + S2 + S3 activados → nivel alto.  
 - **Prueba 5:** Combinación inválida (ej: SM sin SB) → error.  
 
 *(Aquí se documentan capturas de pantalla de la simulación en CODESYS y fotos del prototipo con OPENPLC)*  
