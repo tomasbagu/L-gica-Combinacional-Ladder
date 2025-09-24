@@ -52,7 +52,8 @@ El sistema se implementa en **ladder diagram**.
 - Cada sensor es una entrada digital (I0.0, I0.1, I0.2).  
 - Cada estado del tanque es una salida (Q0.0: vacío, Q0.1: bajo, Q0.2: normal, Q0.3: alto, Q0.4: error).  
 
-*(Aquí se insertan capturas del ladder en CODESYS con las condiciones lógicas programadas)*  
+<img width="1228" height="757" alt="image" src="https://github.com/user-attachments/assets/aee9893e-ee19-4d7d-8dd6-476334877e14" />
+
 
 ### 3.2. HMI en CODESYS  
 - Representación gráfica de un tanque.  
