@@ -28,9 +28,9 @@ OPENPLC es una plataforma open source que permite correr programas de PLC en har
 
 ### 2.4. Sensores de Nivel  
 Se emplean tres sensores digitales:  
-- **Sensor bajo (SB)** → detecta nivel mínimo.  
-- **Sensor medio (SM)** → detecta nivel intermedio.  
-- **Sensor alto (SA)** → detecta nivel máximo.  
+- **Sensor bajo (S1)** → detecta nivel mínimo.  
+- **Sensor medio (S2)** → detecta nivel intermedio.  
+- **Sensor alto (S3)** → detecta nivel máximo.  
 
 ### 2.5. Lógica combinacional  
 La determinación del estado del tanque se basa en la siguiente **tabla de verdad**:  
@@ -59,7 +59,7 @@ El sistema se implementa en **ladder diagram**.
 - Representación gráfica de un tanque.  
 - Tres indicadores de nivel (vacío, bajo, normal, alto).  
 - Indicador adicional para error.
-  
+  - Ejemplo de nivel bajo para el HMI:
 <img width="1158" height="659" alt="image" src="https://github.com/user-attachments/assets/b2400886-da24-4855-bb76-b93e0bf9e4db" />
 
 
