@@ -105,6 +105,14 @@ El sistema se implementa en **ladder diagram**.
   <img width="1194" height="670" alt="image" src="https://github.com/user-attachments/assets/6f370444-060e-4be7-908c-df2692b5f95f" />
 - Error:
   <img width="1191" height="656" alt="image" src="https://github.com/user-attachments/assets/1aaeb85b-2a37-4d8e-b024-b227c96ece93" />
+
+### 5.2 Resultados en OpenPLC (Hardware real)
+- Vacio:
+- Nivel de Agua bajo:
+- Nivel de Agua normal:
+- Nivel de Agua alto:
+- Error:
+
 ---
 
 ## 6. Video de Demostración  
