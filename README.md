@@ -70,8 +70,11 @@ Ejemplo con el tanque en nivel bajo:
 - PLC físico o simulador en OPENPLC.  
 - Tres sensores de nivel (flotadores, capacitivos o pulsadores en prototipo).  
 - Salidas visualizadas mediante LEDs o indicadores virtuales.  
+-Conexiones en OpenPLC
+<img width="1329" height="503" alt="image" src="https://github.com/user-attachments/assets/f5337c6b-d1b6-45a3-8c7e-4faaee395467" />
+- Físico
+<img width="1595" height="756" alt="image" src="https://github.com/user-attachments/assets/77f2f599-2b50-4665-b050-7074cb880fbc" />
 
-*(Incluye diagrama eléctrico con conexiones de sensores e indicadores de salida)*  
 
 ---
 
