@@ -104,10 +104,37 @@ Se realizaron pruebas tanto en simulación (CODESYS) como en hardware real (OPEN
 - **Prueba 5:** Combinación inválida (ejemplo: S2 sin S1) → error.  
 
 ### 5.1 Resultados en CODESYS  
-*(Evidencias gráficas de la simulación en distintos estados)*  
+- **Tanque vacío**
+ <img width="996" height="651" alt="image" src="https://github.com/user-attachments/assets/8270a385-e065-46de-a91e-c8340e279d54" />
+
+- **Nivel bajo de agua**
+<img width="997" height="652" alt="image" src="https://github.com/user-attachments/assets/e917fb22-e1fb-4fed-99e2-ec58e5cb4d8c" />
+
+- **Nivel normal de agua**
+<img width="994" height="653" alt="image" src="https://github.com/user-attachments/assets/6e9ee602-2947-4e9b-8ba4-f072794a9d81" />
+
+- **Nivel alto de agua**
+<img width="996" height="659" alt="image" src="https://github.com/user-attachments/assets/8d5957eb-982d-497c-a329-8c5c9c02bf34" />
+
+- **Error**    
+<img width="995" height="657" alt="image" src="https://github.com/user-attachments/assets/47f5857c-4ba5-4648-bd71-05c696c43feb" />
 
 ### 5.2 Resultados en OPENPLC (Hardware real)  
-*(Documentación de las pruebas con sensores y LEDs físicos)*  
+- **Tanque vacío**
+  <img width="1547" height="659" alt="image" src="https://github.com/user-attachments/assets/3df9cade-1c3d-429e-ba62-e80c62f70c98" />
+
+- **Nivel bajo de agua**
+<img width="1315" height="540" alt="image" src="https://github.com/user-attachments/assets/c70ded27-5c4b-4024-8019-a7c5d8232cea" />
+
+- **Nivel normal de agua**
+  <img width="1300" height="452" alt="image" src="https://github.com/user-attachments/assets/eb66a376-6e2b-4b91-a801-f8b3d00d1c97" />
+
+- **Nivel alto de agua**
+<img width="1428" height="497" alt="image" src="https://github.com/user-attachments/assets/30240280-2434-4972-be46-04d10d577778" />
+
+- **Error**
+<img width="1344" height="420" alt="image" src="https://github.com/user-attachments/assets/fcd958a6-bf10-4615-aca5-b21edba813d0" />
+ 
 
 ---
 
