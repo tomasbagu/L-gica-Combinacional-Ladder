@@ -66,8 +66,8 @@ La HMI representa gráficamente el tanque y sus niveles:
 
 ### 3.3. Hardware propuesto  
 - PLC físico o simulador en OPENPLC.  
-- Tres sensores de nivel (flotadores, capacitivos o pulsadores en prototipo).  
-- Salidas visualizadas mediante LEDs o indicadores virtuales.  
+- Tres sensores de nivel (en este caso se trabajaron señales de 1 y 0).  
+- Salidas visualizadas mediante LEDs.  
 -Conexiones en OpenPLC
 <img width="1329" height="503" alt="image" src="https://github.com/user-attachments/assets/f5337c6b-d1b6-45a3-8c7e-4faaee395467" />
 - Físico
