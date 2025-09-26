@@ -140,7 +140,7 @@ Se realizaron pruebas tanto en simulación (CODESYS) como en hardware real (OPEN
 
 ## 6. Video de Demostración  
 
-🎥 [Enlace al video en YouTube o Teams]  
+🎥 [(https://youtu.be/CGvm0mQRw-M)]  
 
 Contenido:  
 1. Presentación breve del sistema.  
