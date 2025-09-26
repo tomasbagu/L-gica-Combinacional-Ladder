@@ -79,13 +79,13 @@ La HMI representa gráficamente el tanque y sus niveles:
 ## 4. Implementación  
 
 ### 4.1. Simulación en CODESYS  
-- Configuración de entradas digitales como sensores.  
-- Asociación de variables a los objetos gráficos de la HMI.  
-- Ejecución de la simulación y verificación de los diferentes estados.  
+- Configuración de entradas digitales como sensores y sus respectivas salidas en variables globales.  
+- Asociación de variables a los objetos gráficos de la HMI, como los LEDs o los switches.  
+- Ejecución de la simulación y verificación de los diferentes estados (Vacío, bajo, normal, alto o error).  
 
 ### 4.2. Validación con OPENPLC y prototipo real  
 - Exportación del programa a formato compatible con OPENPLC.  
-- Carga en un controlador (ejemplo: ESP32).  
+- Carga en un controlador (en este caso un ESP32).  
 - Conexión de sensores físicos y LEDs de salida.  
 - Ejecución de pruebas con activación progresiva de sensores.  
 
