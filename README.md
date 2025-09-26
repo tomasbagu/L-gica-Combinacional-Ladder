@@ -61,10 +61,8 @@ El sistema fue implementado en **ladder diagram**.
 La HMI representa gráficamente el tanque y sus niveles:  
 - Indicadores para vacío, bajo, normal y alto.  
 - Un indicador adicional para estados erróneos.  
+<img width="994" height="710" alt="image" src="https://github.com/user-attachments/assets/dd41ef6b-c789-4b99-9eb6-efb20bc915b7" />
 
-Ejemplo con el tanque en nivel bajo:  
-
-<img width="1158" height="659" alt="image" src="https://github.com/user-attachments/assets/b2400886-da24-4855-bb76-b93e0bf9e4db" />
 
 ### 3.3. Hardware propuesto  
 - PLC físico o simulador en OPENPLC.  
